@@ -11,15 +11,28 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="vertical">
-
+        android:orientation="vertical"
+        android:layout_marginTop="55dp">
+        <RelativeLayout
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center"
+           >
         <de.hdodenhof.circleimageview.CircleImageView
             android:id="@+id/profileImage"
             android:layout_width="100dp"
             android:layout_height="100dp"
-            android:layout_gravity="center_horizontal"
-            android:layout_marginTop="55dp"
+
            android:background="@drawable/ic_person_black_24dp"/>
+            <View
+                android:id="@+id/opacityFilter"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:background="@drawable/relative_layout_bg"
+                android:alpha="0.3"
+                />
+
+        </RelativeLayout>
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"

@@ -19,14 +19,27 @@
             android:layout_weight="1"
             android:orientation="vertical">
 
-            <de.hdodenhof.circleimageview.CircleImageView
-                android:id="@+id/profileImage"
+            <RelativeLayout
                 android:layout_width="100dp"
                 android:layout_height="100dp"
-                android:layout_gravity="center_horizontal"
-                android:layout_marginTop="55dp"
-                android:background="@drawable/ic_person_black_24dp" />
-        </LinearLayout>
+                android:layout_gravity="center"
+               android:layout_marginTop="55dp" >
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/profileImage"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+
+                    android:background="@drawable/ic_person_black_24dp"/>
+                <View
+                    android:id="@+id/opacityFilter"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:background="@drawable/relative_layout_bg"
+                    android:alpha="0.3"
+                    />
+
+            </RelativeLayout>
+            </LinearLayout>
 
         <RelativeLayout
             android:layout_width="0dp"
